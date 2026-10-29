@@ -1,0 +1,67 @@
+#question 1
+x = 5
+y = 10 
+
+x += 3
+y *= 2
+
+result = x / y 
+print (result )
+
+#question 2
+
+a = 8
+b = 4
+c = 6
+
+
+cond1 = a > b 
+cond2 = b % 2 == 0
+cond3 = c <= a 
+
+final_condition = cond1 or (cond2 and cond3 )
+
+print (final_condition)
+
+#question 3 
+
+score = int (input ("please entre the test score (0-100):")) 
+#90-100: A
+#80-89: B
+#70-79: C
+#60-69: D
+#Below_60 : F
+
+if score >= 90: 
+    grade =("a")
+elif score >= 80: 
+    grade = ("b")
+elif score >= 70:
+    grade = ("c")
+elif score <= 60:
+    grade = ("d")
+else :
+    grade = ("f")   
+
+print (f"the grade is: {grade}")    
+
+#question 3 
+num1 = float(input("entre the first number (num1):"))
+num2 = float(input("entre the second number (num2):"))
+
+operation = input ("entre an operation (+, - , * , / )")
+
+if operation == ("+"):
+    result = num1 + num2 
+elif operation == ("-"):
+    result = num1 - num2 
+elif operation == ("*"):
+    result = num1 * num2 
+elif operation ==("/"):
+    if num2 == 0 :
+        result =("error! division by zero is not allowed ")
+    else: 
+        result = num1 / num2 
+else :
+    result = ("invlid operation selceted ")
+print (f"the reult is:{result}")
